@@ -2,7 +2,7 @@ import re
 from pathlib import Path
 from typing import List, Optional
 import pdfplumber
-import fitz  # PyMuPDF
+import pymupdf  # PyMuPDF
 from pydantic import BaseModel, Field
 
 class WallData(BaseModel):
@@ -35,7 +35,7 @@ class BoschPDFParser:
         out_path.mkdir(exist_ok=True)
         
         extracted_files = []
-        doc = fitz.open(self.pdf_path)
+        doc = pymupdf.open(self.pdf_path)
         
         img_counter = 1
         for page_index in range(len(doc)):

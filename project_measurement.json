@@ -1,53 +1,42 @@
 {
-  "room_geometry": {
+  "geometry": {
     "walls": [
       {
-        "name": "Wall 1",
-        "length_mm": 3450.0,
+        "name": "Стена A",
+        "length_mm": 3200.0,
         "height_mm": null
       },
       {
-        "name": "Wall 2",
-        "length_mm": 2800.0,
-        "height_mm": null
-      },
-      {
-        "name": "Wall 3",
-        "length_mm": 3450.0,
-        "height_mm": null
-      },
-      {
-        "name": "Wall 4",
-        "length_mm": 2800.0,
+        "name": "Стена B",
+        "length_mm": 2400.0,
         "height_mm": null
       }
     ],
-    "ceiling_height_mm": 2650.0,
-    "raw_text_summary": "Bosch MeasureOn - Test Project Report\nDate: 2026-08-25 | Operator: Test User\nRoom Geometry Data:\nCeiling Height: 2.65 m\nWall 1: 3.450 m\nWall 2: 2.800 m\nWall 3: 3.450 m\nWall 4: 2.800 m"
+    "ceiling_height_mm": 2700.0,
+    "extracted_image_paths": [
+      "sample_photo.jpg"
+    ]
   },
-  "communications_data": {
-    "items": [
-      {
-        "type": "socket_220v",
-        "description": "Розетка 220V",
-        "wall_name": "Wall A",
-        "position": {
-          "x_mm": 1450.0,
-          "z_mm": 950.0
-        },
-        "notes": null
+  "all_communications": [
+    {
+      "type": "socket_220v",
+      "description": "Розетка 220V",
+      "wall_name": "Стена A",
+      "position": {
+        "x_mm": 1450.0,
+        "z_mm": 950.0
       },
-      {
-        "type": "water_cold",
-        "description": "Вывод холодной воды",
-        "wall_name": "Wall A",
-        "position": {
-          "x_mm": 2100.0,
-          "z_mm": 550.0
-        },
-        "notes": null
-      }
-    ],
-    "summary": "На замере стены Wall A распознаны две коммуникации: розетка 220V на высоте 950 мм (дистанция от угла 1450 мм) и вывод холодной воды на высоте 550 мм (дистанция от угла 2100 мм)."
-  }
+      "notes": null
+    },
+    {
+      "type": "water_cold",
+      "description": "Вывод холодной воды",
+      "wall_name": "Стена A",
+      "position": {
+        "x_mm": 2100.0,
+        "z_mm": 550.0
+      },
+      "notes": null
+    }
+  ]
 }
